@@ -1,0 +1,97 @@
+.slide-image {
+  width: 100%;
+}
+
+.head-title {
+  display: flex;
+  justify-content: space-between; /*元素在主轴两端对齐*/
+  border-left-width: 1.5px;
+  border-left-style: solid;
+  border-left-color: green;
+  align-items: center; /*元素在交叉轴中点对齐*/
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.text-all {
+  font-size: 12px;
+  color: green;
+  margin-right: 10px;
+}
+
+.head-content {
+  display: flex;
+  flex-wrap: wrap; /*决定元素的换行方式*/
+  justify-content: center; /*元素居中对齐*/
+  flex-direction: row;
+}
+
+.head-content-item {
+  margin: 2px;
+  width: 45%;
+  height: 250rpx;
+  background: fuchsia;
+  position: relative;
+}
+
+.head-content-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.head-content-item-text {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  width: 98%;
+  font-size: 12px;
+  height: 55rpx;
+  /* 背景实现渐变色 */
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+.list-item {
+  height: 450rpx;
+  width: 100%;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+}
+
+.list-item-images {
+  position: relative;
+  height: 300rpx;
+  width: 100%;
+}
+
+.list-item-images-img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-button {
+  width: 130rpx;
+  height: 130rpx;
+  position: absolute;
+  bottom: -65rpx;
+  right: 65rpx;
+  border-radius: 50%;
+}
+
+.list-item-title {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.list-item-content {
+  font-size: 12px;
+  margin-left: 10px;
+  color: gainsboro;
+}

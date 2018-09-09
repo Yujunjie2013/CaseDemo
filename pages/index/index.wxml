@@ -1,0 +1,51 @@
+<view class='container'>
+
+  <view class='selection'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" bindchange="bannerChanger">
+      <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+  <view class='selection'>
+
+    <view class='head-title'>
+      <text>精品推荐</text>
+      <text class='text-all'>全部精品</text>
+    </view>
+
+    <view class='head-content'>
+      <view class='head-content-item' wx:for="{{titleImages}}" wx:key="item">
+        <image src="{{item.url}}"></image>
+        <view class='head-content-item-text'>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='selection'>
+    <view class='head-title'>
+      <text>热门商品</text>
+      <text class='text-all'>全部商品</text>
+    </view>
+
+    <view class='list-item' wx:for="{{listItem}}" wx:key="item">
+      <view class='list-item-images'>
+        <image class='list-item-images-img' src='{{item.url}}'></image>
+        <image class='image-button' src='../../images/circle_button.jpg'></image>
+
+      </view>
+      <view class='list-item-title'>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='list-item-content'>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>
